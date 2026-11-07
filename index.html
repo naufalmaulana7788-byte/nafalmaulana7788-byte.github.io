@@ -4,60 +4,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VALLSTORE | Online Shop</title>
+
+    <title>VALLSTORE | Online Shopping</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <!-- NAVBAR -->
     <header>
         <nav class="navbar">
-            <a href="#" class="logo">VALL<span>STORE.</span></a>
+            <a href="#home" class="logo">
+                VALL<span>STORE.</span>
+            </a>
 
             <ul class="nav-menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#kategori">Kategori</a></li>
                 <li><a href="#produk">Produk</a></li>
+                <li><a href="#keranjang">Keranjang</a></li>
                 <li><a href="#kontak">Kontak</a></li>
             </ul>
 
-            <a href="#produk" class="nav-button">Belanja</a>
+            <a href="#produk" class="nav-button">
+                Belanja
+            </a>
         </nav>
     </header>
 
-    <!-- HERO -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <span class="badge">WELCOME TO VALLSTORE</span>
 
-            <h1>LEVEL UP YOUR<br>
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <span class="badge">
+                WELCOME TO VALLSTORE
+            </span>
+
+            <h1>
+                LEVEL UP YOUR
                 <span>SHOPPING</span>
             </h1>
 
             <p>
-                Temukan produk favoritmu dengan kualitas terbaik,
-                harga bersahabat dan pengalaman belanja modern.
+                Temukan berbagai produk pilihan dengan
+                kualitas terbaik dan harga bersahabat.
+                Belanja mudah hanya di VALLSTORE.
             </p>
 
             <a href="#produk" class="btn-primary">
                 Belanja Sekarang →
             </a>
+
         </div>
 
         <div class="hero-image">
-            <img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?w=900"
-                 alt="Produk elektronik">
+
+            <img
+                src="https://images.unsplash.com/photo-1498049794561-7780e7231661?w=900"
+                alt="Produk elektronik VALLSTORE"
+            >
+
         </div>
+
     </section>
+
 
     <!-- KATEGORI -->
     <section class="kategori" id="kategori">
+
         <div class="section-title">
+
             <span>OUR CATEGORY</span>
+
             <h2>Kategori Produk</h2>
+
+            <p>
+                Temukan kategori produk favoritmu.
+            </p>
+
         </div>
 
         <div class="category-grid">
+
             <div class="category-card">
                 <div class="category-icon">🎧</div>
                 <h3>Accessories</h3>
@@ -81,88 +113,221 @@
                 <h3>Gaming</h3>
                 <p>Gaming equipment</p>
             </div>
+
         </div>
+
     </section>
+
 
     <!-- PRODUK -->
     <section class="produk" id="produk">
+
         <div class="section-title">
+
             <span>OUR PRODUCTS</span>
+
             <h2>Produk Terbaru</h2>
-            <p>Pilihan produk terbaik untuk kamu.</p>
+
+            <p>
+                Pilihan produk terbaik khusus untuk kamu.
+            </p>
+
         </div>
 
+        <!-- SEARCH -->
+        <div class="search-container">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Cari produk favoritmu..."
+            >
+
+        </div>
+
+
+        <!-- PRODUCT GRID -->
         <div class="product-grid">
 
+            <!-- PRODUK 1 -->
             <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600"
-                     alt="Headphone">
+
+                <img
+                    src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600"
+                    alt="Headphone Premium"
+                >
+
                 <div class="product-info">
+
                     <small>ACCESSORIES</small>
+
                     <h3>Headphone Premium</h3>
+
                     <p class="price">Rp 250.000</p>
-                    <a href="https://wa.me/6281234567890?text=Saya%20ingin%20membeli%20Headphone%20Premium"
-                       class="buy-button">Beli Sekarang</a>
+
                 </div>
+
             </div>
 
+
+            <!-- PRODUK 2 -->
             <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600"
-                     alt="Jam tangan">
+
+                <img
+                    src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600"
+                    alt="Smart Watch"
+                >
+
                 <div class="product-info">
+
                     <small>FASHION</small>
+
                     <h3>Smart Watch</h3>
+
                     <p class="price">Rp 350.000</p>
-                    <a href="https://wa.me/6281234567890?text=Saya%20ingin%20membeli%20Smart%20Watch"
-                       class="buy-button">Beli Sekarang</a>
+
                 </div>
+
             </div>
 
+
+            <!-- PRODUK 3 -->
             <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1527814050087-3793815479db?w=600"
-                     alt="Mouse gaming">
+
+                <img
+                    src="https://images.unsplash.com/photo-1527814050087-3793815479db?w=600"
+                    alt="Gaming Mouse"
+                >
+
                 <div class="product-info">
+
                     <small>GAMING</small>
+
                     <h3>Gaming Mouse</h3>
+
                     <p class="price">Rp 150.000</p>
-                    <a href="https://wa.me/6281234567890?text=Saya%20ingin%20membeli%20Gaming%20Mouse"
-                       class="buy-button">Beli Sekarang</a>
+
                 </div>
+
             </div>
 
+
+            <!-- PRODUK 4 -->
             <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=600"
-                     alt="Speaker">
+
+                <img
+                    src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=600"
+                    alt="Wireless Headset"
+                >
+
                 <div class="product-info">
+
                     <small>ELECTRONICS</small>
+
                     <h3>Wireless Headset</h3>
+
                     <p class="price">Rp 200.000</p>
-                    <a href="https://wa.me/6281234567890?text=Saya%20ingin%20membeli%20Wireless%20Headset"
-                       class="buy-button">Beli Sekarang</a>
+
                 </div>
+
             </div>
 
         </div>
+
     </section>
+
+
+    <!-- KERANJANG -->
+    <section class="produk" id="keranjang">
+
+        <div class="section-title">
+
+            <span>YOUR SHOPPING CART</span>
+
+            <h2>Keranjang Belanja</h2>
+
+            <p>
+                Produk yang kamu tambahkan akan muncul di sini.
+            </p>
+
+        </div>
+
+        <div class="cart-container">
+
+            <h3>
+                🛒 Keranjang
+                (<span id="cartCount">0</span>)
+            </h3>
+
+            <div id="cartList">
+
+                <p>Keranjang masih kosong.</p>
+
+            </div>
+
+            <div class="cart-summary">
+
+                <h3>
+                    Total:
+                    <span id="cartTotal">Rp 0</span>
+                </h3>
+
+                <button
+                    class="btn-primary"
+                    onclick="checkoutWhatsApp()"
+                >
+                    Checkout WhatsApp →
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
 
     <!-- PROMO -->
     <section class="promo">
+
         <div>
+
             <span>SPECIAL OFFER</span>
+
             <h2>Upgrade Your Style!</h2>
-            <p>Temukan produk favoritmu hanya di VALLSTORE.</p>
-            <a href="#produk" class="btn-primary">Lihat Produk</a>
+
+            <p>
+                Temukan produk favoritmu hanya di VALLSTORE.
+            </p>
+
+            <a href="#produk" class="btn-primary">
+                Lihat Produk
+            </a>
+
         </div>
+
     </section>
+
 
     <!-- FOOTER -->
     <footer id="kontak">
-        <h2>VALL<span>STORE.</span></h2>
-        <p>Belanja mudah, cepat dan terpercaya.</p>
+
+        <h2>
+            VALL<span>STORE.</span>
+        </h2>
+
+        <p>
+            Belanja mudah, cepat dan terpercaya.
+        </p>
+
         <p class="copyright">
             © 2026 VALLSTORE. All Rights Reserved.
         </p>
+
     </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
 
 </body>
 </html>
