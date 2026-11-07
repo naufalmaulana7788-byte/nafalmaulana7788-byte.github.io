@@ -100,10 +100,7 @@ function tampilkanKeranjang() {
     let jumlahItem = 0;
 
     if (keranjang.length === 0) {
-
-        cartList.innerHTML =
-            "<p>Keranjang masih kosong.</p>";
-
+        cartList.innerHTML = "<p>Keranjang masih kosong.</p>";
     }
 
     keranjang.forEach((item, index) => {
@@ -112,36 +109,21 @@ function tampilkanKeranjang() {
         jumlahItem += item.jumlah;
 
         cartList.innerHTML += `
-
             <div class="cart-item">
-
                 <div>
                     <h4>${item.nama}</h4>
-
-                    <p>
-                        ${formatRupiah(item.harga)}
-                        x ${item.jumlah}
-                    </p>
+                    <p>${formatRupiah(item.harga)} x ${item.jumlah}</p>
                 </div>
 
                 <button onclick="hapusKeranjang(${index})">
                     Hapus
                 </button>
-
             </div>
-
         `;
-
     });
 
-    if (cartTotal) {
-        cartTotal.textContent = formatRupiah(total);
-    }
-
-    if (cartCount) {
-        cartCount.textContent = jumlahItem;
-    }
-
+    cartTotal.textContent = formatRupiah(total);
+    cartCount.textContent = jumlahItem;
 }
 
 
