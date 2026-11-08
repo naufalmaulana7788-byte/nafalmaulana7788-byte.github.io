@@ -1,1 +1,533 @@
 
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VALLSTORE | Online Shop</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #080812;
+    color: white;
+}
+
+/* NAVBAR */
+header {
+    background: #111120;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #a855f7;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 28px;
+    list-style: none;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.nav-menu a:hover {
+    color: #a855f7;
+}
+
+.nav-btn {
+    background: #9333ea;
+    padding: 12px 22px;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    max-width: 1200px;
+    margin: auto;
+    min-height: 570px;
+    padding: 70px 25px;
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content small {
+    color: #c084fc;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 55px;
+    line-height: 1.2;
+    margin: 25px 0;
+}
+
+.hero h1 span {
+    color: #a855f7;
+}
+
+.hero p {
+    color: #aaa;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: linear-gradient(90deg,#9333ea,#4f46e5);
+    padding: 15px 28px;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px #9333ea;
+}
+
+.hero-img {
+    flex: 1;
+}
+
+.hero-img img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 35px #9333ea55;
+}
+
+/* SECTION */
+section {
+    scroll-margin-top: 85px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-title small {
+    color: #a855f7;
+    letter-spacing: 3px;
+}
+
+.section-title h2 {
+    font-size: 35px;
+    margin-top: 12px;
+}
+
+/* CATEGORY */
+.category {
+    padding: 75px 25px;
+    background: #111120;
+}
+
+.category-list {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+
+.category-card {
+    background: #1b1b30;
+    text-align: center;
+    padding: 35px 15px;
+    border-radius: 15px;
+    transition: .3s;
+}
+
+.category-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px #9333ea55;
+}
+
+.category-card span {
+    font-size: 42px;
+}
+
+.category-card h3 {
+    margin-top: 15px;
+}
+
+/* PRODUCTS */
+.products {
+    padding: 80px 25px;
+}
+
+.product-list {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px;
+}
+
+.product-card {
+    background: #171729;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px #9333ea55;
+}
+
+.product-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-info h3 {
+    margin-bottom: 12px;
+}
+
+.product-info p {
+    color: #aaa;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.price {
+    color: #c084fc;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 18px 0;
+}
+
+.buy-btn {
+    display: block;
+    text-align: center;
+    background: #9333ea;
+    padding: 12px;
+    border-radius: 7px;
+    color: white;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.buy-btn:hover {
+    background: #6b21a8;
+}
+
+/* PROMO */
+.promo {
+    max-width: 1100px;
+    margin: 30px auto 70px;
+    padding: 65px 25px;
+    text-align: center;
+    border-radius: 20px;
+    background: linear-gradient(120deg,#581c87,#312e81);
+}
+
+.promo h2 {
+    font-size: 32px;
+    margin: 15px 0;
+}
+
+.promo p {
+    margin-bottom: 25px;
+    color: #ddd;
+}
+
+/* FOOTER */
+footer {
+    background: #111120;
+    padding: 45px 20px;
+    text-align: center;
+}
+
+footer h2 {
+    margin-bottom: 15px;
+}
+
+footer span {
+    color: #a855f7;
+}
+
+footer p {
+    color: #aaa;
+    margin-top: 12px;
+}
+
+.copyright {
+    font-size: 13px;
+    margin-top: 25px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 900px) {
+    .product-list {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+}
+
+@media(max-width: 600px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    .nav-menu {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        gap: 17px;
+        font-size: 13px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .nav-btn {
+        padding: 10px 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 50px 20px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .category-list {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .product-list {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title h2 {
+        font-size: 28px;
+    }
+
+    .promo {
+        margin: 20px 15px 50px;
+    }
+
+    .promo h2 {
+        font-size: 25px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header>
+<nav class="navbar">
+    <div class="logo">VALL<span>STORE.</span></div>
+
+    <ul class="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#kategori">Kategori</a></li>
+        <li><a href="#produk">Produk</a></li>
+        <li><a href="#tentang">Tentang</a></li>
+    </ul>
+
+    <a href="#produk" class="nav-btn">Belanja</a>
+</nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+
+    <div class="hero-content">
+        <small>WELCOME TO VALLSTORE</small>
+
+        <h1>Belanja Mudah,<br>
+        Gaya Lebih <span>Keren.</span></h1>
+
+        <p>
+        Temukan berbagai produk pilihan dengan
+        kualitas terbaik dan harga terjangkau.
+        Nikmati pengalaman belanja online
+        yang mudah, cepat dan praktis.
+        </p>
+
+        <a href="#produk" class="btn">
+            Mulai Belanja →
+        </a>
+    </div>
+
+    <div class="hero-img">
+        <img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?w=900"
+        alt="Produk elektronik">
+    </div>
+
+</section>
+
+<!-- KATEGORI -->
+<section class="category" id="kategori">
+
+    <div class="section-title">
+        <small>EXPLORE OUR STORE</small>
+        <h2>Kategori Produk</h2>
+    </div>
+
+    <div class="category-list">
+
+        <div class="category-card">
+            <span>🎧</span>
+            <h3>Elektronik</h3>
+        </div>
+
+        <div class="category-card">
+            <span>👕</span>
+            <h3>Fashion</h3>
+        </div>
+
+        <div class="category-card">
+            <span>⌚</span>
+            <h3>Aksesoris</h3>
+        </div>
+
+        <div class="category-card">
+            <span>🎮</span>
+            <h3>Gaming</h3>
+        </div>
+
+    </div>
+</section>
+
+<!-- PRODUK -->
+<section class="products" id="produk">
+
+    <div class="section-title">
+        <small>OUR COLLECTION</small>
+        <h2>Produk Terbaru</h2>
+    </div>
+
+    <div class="product-list">
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600" alt="Headphone">
+            <div class="product-info">
+                <h3>Headphone Premium</h3>
+                <p>Suara jernih dan desain modern.</p>
+                <div class="price">Rp250.000</div>
+                <a class="buy-btn" href="https://wa.me/6281234567890">Beli Sekarang</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600" alt="Smart Watch">
+            <div class="product-info">
+                <h3>Smart Watch</h3>
+                <p>Jam modern dengan desain elegan.</p>
+                <div class="price">Rp350.000</div>
+                <a class="buy-btn" href="https://wa.me/6281234567890">Beli Sekarang</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=600" alt="Kamera">
+            <div class="product-info">
+                <h3>Kamera Digital</h3>
+                <p>Abadikan momen terbaikmu.</p>
+                <div class="price">Rp850.000</div>
+                <a class="buy-btn" href="https://wa.me/6281234567890">Beli Sekarang</a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600" alt="Sepatu">
+            <div class="product-info">
+                <h3>Sepatu Sport</h3>
+                <p>Nyaman untuk aktivitas sehari-hari.</p>
+                <div class="price">Rp299.000</div>
+                <a class="buy-btn" href="https://wa.me/6281234567890">Beli Sekarang</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- PROMO -->
+<section class="promo" id="tentang">
+
+    <small>SPECIAL OFFER</small>
+
+    <h2>Belanja Lebih Hemat!</h2>
+
+    <p>
+    Dapatkan produk favoritmu hanya di VALLSTORE.
+    Kualitas pilihan, harga bersahabat.
+    </p>
+
+    <a href="#produk" class="btn">
+        Lihat Produk
+    </a>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+    <h2>VALL<span>STORE.</span></h2>
+
+    <p>Belanja Online Mudah dan Praktis.</p>
+
+    <p class="copyright">
+    © 2026 VALLSTORE. All Rights Reserved.
+    </p>
+
+</footer>
+
+</body>
+</html>
+
