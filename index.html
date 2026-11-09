@@ -1,408 +1,67 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>VALLShop - Toko Online</title>
-
-    <meta name="description" conent="VALLShop menyediakan berbagai produk pilihan dengan harga terbaik.">
-t
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="VALLShop - Temukan produk favoritmu dengan mudah.">
+  <title>VALLShop | Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
-
 <body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Navigasi utama">
+      <a class="logo" href="index.html">VALL<span>Shop.</span></a>
+      <button class="menu-toggle" aria-label="Buka menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <div class="nav-links">
+        <a href="index.html">Home</a><a href="kategori.html">Kategori</a><a href="produk.html">Produk</a><a href="tentang.html">Tentang</a><a href="kontak.html">Kontak</a>
+      </div>
+      <a class="button button-small header-cta" href="produk.html">Belanja Sekarang</a>
+    </nav>
+  </header>
 
-    <!-- NAVBAR -->
-    <header>
-        <nav class="navbar">
-
-            <a href="#home" class="logo">
-                VALL<span>Shop</span>.
-            </a>
-
-            <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#kategori">Kategori</a></li>
-                <li><a href="#produk">Produk</a></li>
-                <li><a href="#tentang">Tentang</a></li>
-                <li><a href="#kontak">Kontak</a></li>
-            </ul>
-
-            <a href="#produk" class="nav-button">
-                Belanja Sekarang
-            </a>
-
-        </nav>
-    </header>
-
-
-    <!-- HERO SECTION -->
-    <section class="hero" id="home">
-
-        <div class="hero-content">
-
-            <span class="hero-label">
-                ✦ SELAMAT DATANG DI VALLShop
-            </span>
-
-            <h1>
-                Temukan Produk
-                <span>Favoritmu</span>
-                Di Sini!
-            </h1>
-
-            <p>
-                Nikmati pengalaman belanja online yang mudah,
-                nyaman, dan menyenangkan. Temukan berbagai
-                produk berkualitas dengan harga terbaik.
-            </p>
-
-            <div class="hero-buttons">
-                <a href="#produk" class="btn-primary">
-                    Mulai Belanja →
-                </a>
-
-                <a href="#tentang" class="btn-secondary">
-                    Tentang Kami
-                </a>
-            </div>
-
-            <div class="hero-stats">
-                <div>
-                    <h3>100+</h3>
-                    <p>Produk</p>
-                </div>
-
-                <div>
-                    <h3>500+</h3>
-                    <p>Pelanggan</p>
-                </div>
-
-                <div>
-                    <h3>24/7</h3>
-                    <p>Layanan</p>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="hero-image">
-
-            <img
-                src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1000"
-                alt="Tampilan toko online"
-            >
-
-            <div class="floating-card">
-                <span>✨</span>
-                <div>
-                    <h4>Best Collection</h4>
-                    <p>Produk pilihan terbaik</p>
-                </div>
-            </div>
-
-        </div>
-
+  <main>
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow">✦ SELAMAT DATANG DI VALLShop</p>
+        <h1>Temukan Produk <span>Favoritmu</span> Di Sini!</h1>
+        <p class="hero-description">Nikmati pengalaman belanja online yang mudah, nyaman, dan menyenangkan. Temukan berbagai produk berkualitas dengan harga terbaik.</p>
+        <div class="hero-actions"><a class="button" href="produk.html">Mulai Belanja <span>→</span></a><a class="button button-outline" href="tentang.html">Tentang Kami</a></div>
+        <div class="trust-row"><div><strong>100+</strong><small>Produk pilihan</small></div><div><strong>24/7</strong><small>Layanan online</small></div><div><strong>100%</strong><small>Semangat melayani</small></div></div>
+      </div>
+      <div class="hero-visual">
+        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1100&q=85" alt="Interior toko pakaian modern">
+        <div class="floating-card"><span class="sparkle">✦</span><div><strong>Best Collection</strong><small>Produk pilihan terbaik</small></div></div>
+      </div>
     </section>
 
-
-    <!-- KEUNGGULAN -->
-    <section class="features">
-
-        <div class="feature-card">
-            <span>🚚</span>
-            <div>
-                <h3>Pengiriman Cepat</h3>
-                <p>Pesanan dikirim dengan cepat.</p>
-            </div>
-        </div>
-
-        <div class="feature-card">
-            <span>💎</span>
-            <div>
-                <h3>Produk Berkualitas</h3>
-                <p>Pilihan produk berkualitas.</p>
-            </div>
-        </div>
-
-        <div class="feature-card">
-            <span>🔒</span>
-            <div>
-                <h3>Belanja Aman</h3>
-                <p>Transaksi mudah dan nyaman.</p>
-            </div>
-        </div>
-
-        <div class="feature-card">
-            <span>🎧</span>
-            <div>
-                <h3>Layanan Pelanggan</h3>
-                <p>Siap membantu pelanggan.</p>
-            </div>
-        </div>
-
+    <section class="section container">
+      <div class="section-heading"><div><p class="eyebrow">PILIHAN UNTUKMU</p><h2>Kategori Populer</h2></div><a class="text-link" href="kategori.html">Lihat semua →</a></div>
+      <div class="category-grid">
+        <a class="category-card" href="kategori.html#fashion"><span class="category-icon">👕</span><h3>Fashion</h3><p>Gaya untuk setiap hari</p></a>
+        <a class="category-card" href="kategori.html#elektronik"><span class="category-icon">🎧</span><h3>Elektronik</h3><p>Teman aktivitas digital</p></a>
+        <a class="category-card" href="kategori.html#aksesoris"><span class="category-icon">⌚</span><h3>Aksesori</h3><p>Detail yang melengkapi</p></a>
+        <a class="category-card" href="kategori.html#rumah"><span class="category-icon">🏠</span><h3>Rumah</h3><p>Nyaman untuk ruangmu</p></a>
+      </div>
     </section>
 
-
-    <!-- KATEGORI -->
-    <section class="category section" id="kategori">
-
-        <div class="section-heading">
-            <span>KATEGORI PILIHAN</span>
-            <h2>Jelajahi Kategori</h2>
-            <p>Pilih kategori produk favoritmu.</p>
-        </div>
-
-        <div class="category-grid">
-
-            <a href="#produk" class="category-card">
-                <span>👕</span>
-                <h3>Fashion</h3>
-                <p>Produk fashion terbaru</p>
-            </a>
-
-            <a href="#produk" class="category-card">
-                <span>💻</span>
-                <h3>Elektronik</h3>
-                <p>Teknologi masa kini</p>
-            </a>
-
-            <a href="#produk" class="category-card">
-                <span>🎧</span>
-                <h3>Aksesoris</h3>
-                <p>Aksesoris pilihan</p>
-            </a>
-
-            <a href="#produk" class="category-card">
-                <span>🎮</span>
-                <h3>Gaming</h3>
-                <p>Perlengkapan gaming</p>
-            </a>
-
-        </div>
-
-    </section>
-
-
-    <!-- PRODUK -->
-    <section class="products section" id="produk">
-
-        <div class="section-heading">
-            <span>KOLEKSI TERBAIK</span>
-            <h2>Produk Unggulan</h2>
-            <p>Temukan produk pilihan dari VALLShop.</p>
-        </div>
-
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">REKOMENDASI</p><h2>Produk Pilihan</h2></div><a class="text-link" href="produk.html">Jelajahi produk →</a></div>
         <div class="product-grid">
-
-            <!-- PRODUK 1 -->
-            <div class="product-card">
-
-                <div class="product-image">
-                    <img
-                        src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600"
-                        alt="Headphone Premium"
-                    >
-                    <span class="product-label">POPULER</span>
-                </div>
-
-                <div class="product-info">
-                    <small>AKSESORIS</small>
-                    <h3>Headphone Premium</h3>
-                    <p class="price">Rp250.000</p>
-
-                    <a
-                        href="https://wa.me/6281234567890?text=Saya%20ingin%20membeli%20Headphone%20Premium"
-                        class="buy-button"
-                        target="_blank"
-                    >
-                        Beli Sekarang →
-                    </a>
-                </div>
-
-            </div>
-
-
-            <!-- PRODUK 2 -->
-            <div class="product-card">
-
-                <div class="product-image">
-                    <img
-                        src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600"
-                        alt="Smart Watch"
-                    >
-                </div>
-
-                <div class="product-info">
-                    <small>ELEKTRONIK</small>
-                    <h3>Smart Watch</h3>
-                    <p class="price">Rp350.000</p>
-
-                    <a
-                        href="https://wa.me/6281234567890?text=Saya%20ingin%20membeli%20Smart%20Watch"
-                        class="buy-button"
-                        target="_blank"
-                    >
-                        Beli Sekarang →
-                    </a>
-                </div>
-
-            </div>
-
-
-            <!-- PRODUK 3 -->
-            <div class="product-card">
-
-                <div class="product-image">
-                    <img
-                        src="https://images.unsplash.com/photo-1527814050087-3793815479db?w=600"
-                        alt="Gaming Mouse"
-                    >
-                    <span class="product-label">TERBARU</span>
-                </div>
-
-                <div class="product-info">
-                    <small>GAMING</small>
-                    <h3>Gaming Mouse</h3>
-                    <p class="price">Rp150.000</p>
-
-                    <a
-                        href="https://wa.me/6285104201566?text=Saya%20ingin%20membeli%20Gaming%20Mouse"
-                        class="buy-button"
-                        target="_blank"
-                    >
-                        Beli Sekarang →
-                    </a>
-                </div>
-
-            </div>
-
-
-            <!-- PRODUK 4 -->
-            <div class="product-card">
-
-                <div class="product-image">
-                    <img
-                        src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=600"
-                        alt="Wireless Headset"
-                    >
-                </div>
-
-                <div class="product-info">
-                    <small>AKSESORIS</small>
-                    <h3>Wireless Headset</h3>
-                    <p class="price">Rp200.000</p>
-
-                    <a
-                        href="https://wa.me/6281234567890?text=Saya%20ingin%20membeli%20Wireless%20Headset"
-                        class="buy-button"
-                        target="_blank"
-                    >
-                        Beli Sekarang →
-                    </a>
-                </div>
-
-            </div>
-
+          <article class="product-card"><img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=700&q=80" alt="Kaos basic"><div class="product-info"><span class="product-tag">Fashion</span><h3>Kaos Basic Premium</h3><div class="product-bottom"><strong>Rp89.000</strong><button class="add-cart" data-product="Kaos Basic Premium">+ Keranjang</button></div></div></article>
+          <article class="product-card"><img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=700&q=80" alt="Headphone"><div class="product-info"><span class="product-tag">Elektronik</span><h3>Headphone Wireless</h3><div class="product-bottom"><strong>Rp249.000</strong><button class="add-cart" data-product="Headphone Wireless">+ Keranjang</button></div></div></article>
+          <article class="product-card"><img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=700&q=80" alt="Jam tangan"><div class="product-info"><span class="product-tag">Aksesori</span><h3>Classic Watch</h3><div class="product-bottom"><strong>Rp179.000</strong><button class="add-cart" data-product="Classic Watch">+ Keranjang</button></div></div></article>
         </div>
-
+      </div>
     </section>
 
-
-    <!-- TENTANG KAMI -->
-    <section class="about section" id="tentang">
-
-        <div class="about-image">
-            <img
-                src="https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=900"
-                alt="Tentang VALLshop"
-            >
-        </div>
-
-        <div class="about-content">
-
-            <span>TENTANG KAMI</span>
-
-            <h2>Belanja Mudah, Nyaman, dan Terpercaya</h2>
-
-            <p>
-                VALLShop adalah toko online yang menyediakan
-                berbagai pilihan produk untuk memenuhi kebutuhan
-                pelanggan. Kami berkomitmen memberikan pengalaman
-                belanja yang praktis dan menyenangkan.
-            </p>
-
-            <a href="#kontak" class="btn-primary">
-                Hubungi Kami →
-            </a>
-
-        </div>
-
-    </section>
-
-
-    <!-- PROMO -->
-    <section class="promo">
-
-        <div class="promo-content">
-
-            <span>PROMO SPESIAL</span>
-
-            <h2>Temukan Produk Favoritmu!</h2>
-
-            <p>
-                Jelajahi koleksi pilihan dan nikmati pengalaman
-                belanja online bersama VALLShop.
-            </p>
-
-            <a href="#produk" class="btn-primary">
-                Belanja Sekarang →
-            </a>
-
-        </div>
-
-    </section>
-
-
-    <!-- FOOTER -->
-    <footer id="kontak">
-
-        <div class="footer-content">
-
-            <div class="footer-brand">
-                <h2>VALL<span>Shop.</span></h2>
-
-                <p>
-                    Belanja mudah, nyaman, dan menyenangkan
-                    hanya di VALLShop.
-                </p>
-            </div>
-
-            <div class="footer-links">
-                <h3>Navigasi</h3>
-                <a href="#home">Home</a>
-                <a href="#kategori">Kategori</a>
-                <a href="#produk">Produk</a>
-                <a href="#tentang">Tentang Kami</a>
-            </div>
-
-            <div class="footer-links">
-                <h3>Kontak</h3>
-                <a href="https://wa.me/6285104201566" target="_blank">
-                    WhatsApp
-                </a>
-                <a href="#produk">Katalog Produk</a>
-            </div>
-
-        </div>
-
-        <div class="copyright">
-            © 2026 VALLShop. All Rights Reserved.
-        </div>
-
-    </footer>
-
+    <section class="promo container"><div><p class="eyebrow">BELANJA LEBIH MUDAH</p><h2>Temukan yang kamu butuhkan di VALLShop.</h2><p>Jelajahi koleksi pilihan dan temukan produk favoritmu.</p></div><a class="button" href="produk.html">Lihat Produk →</a></section>
+  </main>
+  <footer class="footer"><div class="container footer-inner"><a class="logo" href="index.html">VALL<span>Shop.</span></a><p>Belanja nyaman, pilihan beragam.</p><small>© <span data-year></span> VALLShop. Dibuat untuk proyek pembelajaran.</small></div></footer>
+  <div class="toast" role="status" aria-live="polite"></div>
 </body>
 </html>

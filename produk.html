@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pilih produk favoritmu dan tambahkan ke keranjang.">
+  <title>Produk | VALLShop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <nav class="navbar container" aria-label="Navigasi utama">
+    <a class="logo" href="index.html">VALL<span>Shop.</span></a>
+    <button class="menu-toggle" aria-label="Buka menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <div class="nav-links">
+      <a href="index.html">Home</a><a href="kategori.html">Kategori</a><a href="produk.html">Produk</a><a href="tentang.html">Tentang</a><a href="kontak.html">Kontak</a>
+    </div>
+    <a class="button button-small header-cta" href="produk.html">Belanja Sekarang</a>
+  </nav>
+</header>
+<main>
+  <section class="page-banner container"><p class="eyebrow">VALLShop / PRODUK</p><h1>Semua Produk</h1><p>Pilih produk favoritmu dan tambahkan ke keranjang.</p></section>
+  
+<section class="section container">
+  <div class="filter-row"><p>Produk pilihan untuk kebutuhanmu.</p><div class="filter-buttons"><button class="filter-btn active" data-filter="all">Semua</button><button class="filter-btn" data-filter="fashion">Fashion</button><button class="filter-btn" data-filter="elektronik">Elektronik</button><button class="filter-btn" data-filter="aksesoris">Aksesori</button></div></div>
+  <div class="product-grid product-grid-wide">
+    <article class="product-card" data-category="fashion"><img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=700&q=80" alt="Kaos basic premium"><div class="product-info"><span class="product-tag">Fashion</span><h3>Kaos Basic Premium</h3><div class="product-bottom"><strong>Rp89.000</strong><button class="add-cart" data-product="Kaos Basic Premium">+ Keranjang</button></div></div></article>
+    <article class="product-card" data-category="elektronik"><img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=700&q=80" alt="Headphone wireless"><div class="product-info"><span class="product-tag">Elektronik</span><h3>Headphone Wireless</h3><div class="product-bottom"><strong>Rp249.000</strong><button class="add-cart" data-product="Headphone Wireless">+ Keranjang</button></div></div></article>
+    <article class="product-card" data-category="aksesoris"><img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=700&q=80" alt="Classic watch"><div class="product-info"><span class="product-tag">Aksesori</span><h3>Classic Watch</h3><div class="product-bottom"><strong>Rp179.000</strong><button class="add-cart" data-product="Classic Watch">+ Keranjang</button></div></div></article>
+    <article class="product-card" data-category="fashion"><img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=700&q=80" alt="Jaket kasual"><div class="product-info"><span class="product-tag">Fashion</span><h3>Jaket Kasual</h3><div class="product-bottom"><strong>Rp199.000</strong><button class="add-cart" data-product="Jaket Kasual">+ Keranjang</button></div></div></article>
+    <article class="product-card" data-category="elektronik"><img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=700&q=80" alt="Headset audio"><div class="product-info"><span class="product-tag">Elektronik</span><h3>Headset Audio</h3><div class="product-bottom"><strong>Rp159.000</strong><button class="add-cart" data-product="Headset Audio">+ Keranjang</button></div></div></article>
+    <article class="product-card" data-category="aksesoris"><img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=700&q=80" alt="Aksesori gaya"><div class="product-info"><span class="product-tag">Aksesori</span><h3>Aksesori Minimalis</h3><div class="product-bottom"><strong>Rp69.000</strong><button class="add-cart" data-product="Aksesori Minimalis">+ Keranjang</button></div></div></article>
+  </div>
+</section>
+</main>
+<footer class="footer"><div class="container footer-inner"><a class="logo" href="index.html">VALL<span>Shop.</span></a><p>Belanja nyaman, pilihan beragam.</p><small>© <span data-year></span> VALLShop. Dibuat untuk proyek pembelajaran.</small></div></footer>
+<div class="toast" role="status" aria-live="polite"></div>
+
+</body>
+</html>

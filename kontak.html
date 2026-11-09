@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Punya pertanyaan, saran, atau ingin mengetahui informasi produk? Hubungi VALLShop.">
+  <title>Kontak | VALLShop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <nav class="navbar container" aria-label="Navigasi utama">
+    <a class="logo" href="index.html">VALL<span>Shop.</span></a>
+    <button class="menu-toggle" aria-label="Buka menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <div class="nav-links">
+      <a href="index.html">Home</a><a href="kategori.html">Kategori</a><a href="produk.html">Produk</a><a href="tentang.html">Tentang</a><a href="kontak.html">Kontak</a>
+    </div>
+    <a class="button button-small header-cta" href="produk.html">Belanja Sekarang</a>
+  </nav>
+</header>
+<main>
+  <section class="page-banner container"><p class="eyebrow">VALLShop / KONTAK</p><h1>Hubungi Kami</h1><p>Punya pertanyaan, saran, atau ingin mengetahui informasi produk? Hubungi VALLShop.</p></section>
+  
+<section class="section container contact-layout">
+  <div class="contact-copy"><p class="eyebrow">KAMI SIAP MEMBANTU</p><h2>Ada yang ingin ditanyakan?</h2><p>Kirim pesan melalui formulir ini. Tombol kirim akan membuka aplikasi email pada perangkatmu.</p>
+    <div class="contact-detail"><span>✉</span><div><strong>Email</strong><p>vallshop@example.com</p></div></div>
+    <div class="contact-detail"><span>◷</span><div><strong>Jam layanan</strong><p>Senin–Sabtu, 09.00–17.00</p></div></div>
+  </div>
+  <form class="contact-form" id="contactForm">
+    <label for="name">Nama</label><input id="name" name="name" type="text" placeholder="Nama kamu" required>
+    <label for="email">Email</label><input id="email" name="email" type="email" placeholder="nama@email.com" required>
+    <label for="message">Pesan</label><textarea id="message" name="message" rows="5" placeholder="Tulis pesanmu..." required></textarea>
+    <button class="button" type="submit">Kirim Pesan →</button>
+    <small class="form-note">Ganti alamat email contoh di script.js dengan email tokomu.</small>
+  </form>
+</section>
+</main>
+<footer class="footer"><div class="container footer-inner"><a class="logo" href="index.html">VALL<span>Shop.</span></a><p>Belanja nyaman, pilihan beragam.</p><small>© <span data-year></span> VALLShop. Dibuat untuk proyek pembelajaran.</small></div></footer>
+<div class="toast" role="status" aria-live="polite"></div>
+
+</body>
+</html>
