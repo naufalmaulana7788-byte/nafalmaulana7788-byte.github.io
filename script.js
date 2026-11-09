@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const name = formData.get("name");
       const email = formData.get("email");
       const message = formData.get("message");
-      const recipient = "vallshop@example.com"; // GANTI dengan email toko kamu
+      const recipient = "vallshop@example.com"; // masukkan email mu lalu pesan 
       const subject = encodeURIComponent(`Pesan VALLShop dari ${name}`);
       const body = encodeURIComponent(`Nama: ${name}\nEmail: ${email}\n\nPesan:\n${message}`);
       window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;
