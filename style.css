@@ -1,84 +1,118 @@
 /* VALLShop - gaya utama */
 
-.produk-section {
-    padding: 60px 7%;
-    background: #10101c;
-    color: white;
-    text-align: center;
+/* PRODUK VALLSHOP */
+
+.products-section {
+    padding: 60px 0;
 }
 
-.produk-section h2 {
-    font-size: 32px;
-    color: #00eaff;
-    margin-bottom: 10px;
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
 }
 
-.subtitle {
-    color: #bbb;
-    margin-bottom: 35px;
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
-.produk-container {
+.eyebrow {
+    color: #00d9ff;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    font-size: 30px;
+    margin-top: 5px;
+}
+
+.text-link {
+    color: #00d9ff;
+    text-decoration: none;
+}
+
+.product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 25px;
 }
 
-.produk-card {
-    background: #1c1c30;
-    padding: 18px;
+.product-card {
+    background: #1c1c2b;
     border-radius: 15px;
+    overflow: hidden;
     transition: 0.3s;
     border: 1px solid #333;
 }
 
-.produk-card:hover {
-    transform: translateY(-8px);
-    border-color: #00eaff;
-    box-shadow: 0 5px 20px #00eaff33;
+.product-card:hover {
+    transform: translateY(-7px);
+    border-color: #00d9ff;
 }
 
-.produk-card img {
+.product-card img {
     width: 100%;
-    height: 190px;
+    height: 210px;
     object-fit: cover;
-    border-radius: 10px;
 }
 
-.produk-card h3 {
-    color: #00eaff;
-    margin: 15px 0 8px;
+.product-info {
+    padding: 18px;
+    color: white;
 }
 
-.produk-card p {
-    color: #ccc;
+.category {
+    color: #00d9ff;
+    font-size: 12px;
+}
+
+.product-info h3 {
+    margin: 10px 0;
+}
+
+.product-info p {
+    color: #aaa;
     font-size: 14px;
-    min-height: 40px;
 }
 
-.produk-card h4 {
+.product-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.product-bottom strong {
     color: #00ff99;
-    font-size: 20px;
 }
 
-.btn-beli {
-    display: inline-block;
-    background: #00eaff;
-    color: #10101c;
-    padding: 12px 20px;
-    border-radius: 8px;
+.product-bottom a {
+    background: #00d9ff;
+    color: #111;
     text-decoration: none;
+    padding: 9px 18px;
+    border-radius: 7px;
     font-weight: bold;
-    margin-top: 10px;
 }
 
-.btn-beli:hover {
-    background: #00ff99;
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-@media (max-width: 600px) {
-    .produk-section h2 {
-        font-size: 24px;
+@media (max-width: 480px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading h2 {
+        font-size: 23px;
     }
 }
 
