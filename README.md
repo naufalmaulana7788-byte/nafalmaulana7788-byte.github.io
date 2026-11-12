@@ -15,4 +15,3 @@ VALLShop/
 ├── script.js
 └── README.md
 ```
-
