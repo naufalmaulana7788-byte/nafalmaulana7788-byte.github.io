@@ -1,7 +1,4 @@
 # VALLShop
-
-Template website toko online responsif dengan **5 halaman HTML terpisah**, satu file CSS, dan satu file JavaScript. Cocok untuk GitHub Pages.
-
 ## Struktur file
 
 ```text
