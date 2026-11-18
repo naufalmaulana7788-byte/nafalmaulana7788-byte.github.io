@@ -1,5 +1,84 @@
 /* VALLShop - gaya utama */
 
+/* PERBAIKAN GRID PRODUK VALLSHOP */
+
+.product-grid-wide {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 22px;
+    width: 100%;
+    align-items: stretch;
+}
+
+/* UKURAN KARTU SAMA */
+
+.product-grid-wide .product-card {
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+/* GAMBAR PRODUK */
+
+.product-grid-wide .product-card img {
+    display: block;
+    width: 100% !important;
+    height: 190px !important;
+    object-fit: cover;
+}
+
+/* INFORMASI PRODUK */
+
+.product-grid-wide .product-card h3 {
+    font-size: 17px;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+}
+
+/* HARGA DAN KERANJANG */
+
+.product-grid-wide .product-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: auto;
+}
+
+.product-grid-wide .add-cart {
+    white-space: nowrap;
+}
+
+/* TABLET */
+
+@media (max-width: 992px) {
+    .product-grid-wide {
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    }
+}
+
+/* HP */
+
+@media (max-width: 600px) {
+    .product-grid-wide {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 12px;
+    }
+
+    .product-grid-wide .product-card img {
+        height: 140px !important;
+    }
+
+    .product-grid-wide .product-card h3 {
+        font-size: 14px;
+    }
+}
 
 :root{--bg:#0b0b14;--panel:#121222;--panel2:#17172a;--text:#f7f7fb;--muted:#b8b8ca;--purple:#a83cff;--blue:#615cf5;--border:rgba(177,92,255,.28);--shadow:0 15px 45px rgba(137,52,255,.16)}
 *{box-sizing:border-box;margin:0;padding:0}
